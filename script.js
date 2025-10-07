@@ -1,20 +1,35 @@
-let text = 'hello' + 'word' + '!';
-console.log(text);
-text += 'woooooo!';
-console.log(text);
-text = "don't do that ya";
-text = 'dom\'t do\n that\t ya';
-console.log(text);
-text += 'asdasdasdasdasdasdasdasdasdasdsadasdasdasdasdsd' + 
-'asdasdasdasdasdasdasdasdasdasdsadasdasdasdasdsd' + 
-'asdasdasdasdasdasdasdasdasdasdsadasdasdasdasdsd';
-let name = 'Lola';
-let age = 89;
-text = `hi
-with these commas u can use multi line text`;
-console.log(text);
-text = `hi ${name}! you are ${age} years old!`;
-text = 'hello' + name +  'you are' + age + 'years old!';
-console.log(text);
-console.log(text.toUpperCase());
-
+let bool = true;
+bool = false;
+bool = true && false; // AND
+bool = false && true; // AND
+bool = false && false; // AND
+bool = true && true; // AND
+bool = true || false; // OR
+bool = false || true; // OR
+bool = false || false; // OR
+bool = true || true; // OR
+bool = !true; // NOT
+bool = !false;
+bool = (true || false && true) && !(false || false || true && true);
+console.log(bool);
+bool = 10 > 5;
+console.log(bool);
+bool = 10 <5;
+console.log(bool);
+bool = 10 > 10;
+console.log(bool);
+bool = 10 < 10;
+console.log(bool);
+bool = 10 == 10;
+console.log(bool);
+bool = 10 <= 10;
+bool = 10 >= 10;
+console.log(bool);
+bool = 10 != 4;
+console.log(bool);
+bool = '10' == 10;
+console.log(bool);
+bool = '10' === 10;
+console.log(bool);
+bool = '10' !== 10;
+console.log(bool);
