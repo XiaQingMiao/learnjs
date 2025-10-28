@@ -1,30 +1,26 @@
-let array = [1, 2, 3, 4];
-console.log(array);
-console.log(array[0]);
-array[2] = 10;
-console.log(array);
-array = ['hello', 1, 2, 3, true, [4, 5, 6]];
-console.log(array);
-console.log(array[5][1]);
-array = [
-    [
-        [1,2,3], 
-        [1,2,3], 
-        [1,2,3],
-    ],
-    [
-        [1,2,3], 
-        [1,2,3], 
-        [1,2,3],
-    ],
-    [
-        [1,2,3], 
-        [1,2,3], 
-        [1,2,3],
-    ],
-];
-array = [[[[[1]]]]];
-console.log(array[0][0][0][0][0]);
-array = [1, 2, 3, 4];
-console.log(array.length);
-console.log(array.join('0'));
+let nums = [6,3,5,7,9,4,2,8,1];
+
+nums.forEach(num => crossOriginIsolated.log(num));
+nums.forEach((num,i) => console.log(num,i));
+
+let even = nums.filtyer(num => num%2 ===0);
+console.log(even);
+let sum = nums.filtyer((sum, num) => sum+num);
+console.log(sum);
+
+let sorted = nums.sort((a,b) => {
+    if(a > b) {
+        return 1;
+
+    }
+    if(a < b) {
+        return -1;
+    }
+    return 0;
+});
+console.log(sorted);
+let sorted2 = nums.sort((a,b) => a-b);
+console.log(sorted2);
+
+let squares = nums.map(num => num*num);
+console.log(squares);
